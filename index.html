@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="assets/css/tip-calculator.css">
+  <script src="assets/js/tip-calculator.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="assets/img/splitter.svg" alt="">
+    </div>
+    <div class="calculation-area">
+      <div class="card">
+          <div class="inner-card">
+            <div class="input-area">
+              <h3>Bill</h3>
+              <input class="card-input" type="number" name="" id="inputBill" value="">
+            </div>
+            <div class="input-area">
+              <h3>Select Tip %</h3>
+              <input class="card-input" type="number" name="" id="inputSelectTip" value="">
+            </div>
+            <div class="input-area">
+              <div class="warning-area">
+                <h3>Number of People</h3>
+                <div class="warn" id="warnText"></div>
+              </div>
+              <input class="card-input" type="number" name="" id="inputNumberOfPeople" value="">
+            </div>
+          </div>
+      </div>
+      <div class="total-card">
+          <div class="inner-total-card">
+            <div class="tip-amount-area">
+              <div class="text-area">
+                <h4>Tip Amount</h4>
+                <h6>/ person</h6>
+              </div>
+              <div class="number-area">
+                <span id="amountPriceTxt">$0.00</span>
+              </div>
+            </div>
+            <div class="total-area">
+              <div class="text-area">
+                <h4>Total</h4>
+                <h6>/ person</h6>
+              </div>
+              <div class="number-area">
+                <span id="totalPriceTxt">$0.00</span>
+              </div>
+            </div>
+            <!-- <button id="calculateBtn">
+              <span id="resetCalc">Hesapla</span>
+            </button> -->
+            <button class="calc-button" id="calculateBtn">
+              <span id="calcText">HESAPLA</span>
+            </button>
+            <button class="reset-button" id="resetBtn">
+              <span id="resetText">RESETLE</span>
+            </button>
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
